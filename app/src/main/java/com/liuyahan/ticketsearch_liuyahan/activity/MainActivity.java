@@ -94,12 +94,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void showProgressDialog(View view) {
         //弹出进度条对话框,并查询下载数据,跳转结果页
+        //获取点击查询按钮时各个edittext中的数据
         startCity = startEditText.getText().toString();
         finalCity = finalEditText.getText().toString();
         times = timeEditText.getText().toString();
+        //根据各个数据长度,来判断是否输入为空,如果不为空则执行进度条显示和启动新线程下载
         if (startCity.length()>0){
             if (finalCity.length()>0){
                 if (times.length()>0){
+                    //进度条显示和启动新线程下载
                     progressDialog.show();
                     new DownJson().start();
                 }else{

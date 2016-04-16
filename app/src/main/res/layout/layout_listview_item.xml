@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dip"
+        android:background="#ffffff"
+        >
+        <!-- trainNo 车次 -->
+        <TextView
+            android:id="@+id/trainNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G312"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="10dip"
+            />
+        <View
+            android:id="@+id/L"
+            android:layout_width="1dip"
+            android:layout_height="14dip"
+            android:background="#000000"
+            android:layout_toRightOf="@id/trainNo"
+            android:layout_marginTop="7dip"
+            android:layout_marginLeft="2dip"
+            />
+
+        <TextView
+            android:id="@+id/trainType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高铁"
+            android:layout_toRightOf="@id/L"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="5dip"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/remainNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000张"
+            android:textColor="#BFBFBF"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            />
+        <!--  开始时间  -->
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@id/trainNo"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:textColor="#000000"
+            android:text="05:43"
+            />
+        <!-- 到达时间 -->
+        <TextView
+            android:id="@+id/endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_below="@id/startTime"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="3dip"
+            android:textColor="#BFBFBF"
+            android:text="15:43"
+            />
+        <!-- 出发站 -->
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_alignTop="@id/startTime"
+            android:layout_toRightOf="@id/startTime"
+            android:textColor="#000000"
+            android:layout_marginLeft="35dip"
+            android:text="重庆站"
+            />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_alignLeft="@id/from"
+            android:layout_below="@id/from"
+            android:layout_marginTop="4dip"
+            android:textColor="#BFBFBF"
+            android:text="北京"
+            />
+
+        <TextView
+            android:id="@+id/seatPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥109"
+            android:textSize="20sp"
+            android:textColor="#cd5c5c"
+            android:layout_alignTop="@id/from"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            />
+
+        <!-- 持续时间 -->
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_alignTop="@id/from"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="75dip"
+            android:text="3小时02分"
+            android:textColor="#BFBFBF"
+            />
+        <!-- 座位 -->
+        <TextView
+            android:id="@+id/seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_below="@id/seatPrice"
+            android:layout_marginTop="6dip"
+            android:text="二等座"
+            android:textColor="#BFBFBF"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
